@@ -16,15 +16,11 @@ The Code Editor is also themed:
 -------
 
 ## Instalation 
-There are three methods you can use to install: 
+There are two methods you can use to install: 
 1. You can use the example CSS files to make root level css with the @appCss attribute. **While this is easiest, you will not get the custom font for the code editor as you can use @import for fonts this method**
    * [Purple Rain's CSS File](https://github.com/Abourass/TriliumThemes/blob/master/examples/css/PurpleRain.css)
    * [Rainbow in the Dark's CSS File](https://github.com/Abourass/TriliumThemes/blob/master/examples/css/RainbowInTheDark.css)
 2. You can overwrite the style css / and the options ejs file then use the build tools to build the source. This will let you choose the themes under options like any other theme. **I will do my absolute best to always keep my files up to date with the source**
    * Download the [/src](https://github.com/Abourass/TriliumThemes/tree/master/src) folder and overwrite the /src file in Trilium
    * Build using the build tools in Trilium
-3. You can use the builds in the dist folder, however, I am not entirely sure the non-windows builds built correctly as I'm on windows. **Again, I will try my best to always stay up to date with Trilum**
-   * [Download the Windows x64 build - .7z **v0.28.3**](https://github.com/Abourass/TriliumThemes/blob/master/dist/trilium-windows-x64.7z)
-   * [Download the Windows x64 build - .zip **v0.28.3**](https://github.com/Abourass/TriliumThemes/blob/master/dist/trilium-windows-x64.zip)
-   * [Download the Linux x64 build **v0.28.3**](https://github.com/Abourass/TriliumThemes/blob/master/dist/trilium-linux-x64-.tar.xz)
-   * [Download the Linux Server x64 build **v0.28.3**](https://github.com/Abourass/TriliumThemes/blob/master/dist/trilium-linux-x64-server-.tar.xz)
+
