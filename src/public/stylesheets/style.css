@@ -1,0 +1,1208 @@
+:root {
+    --main-font-size: normal;
+    --tree-font-size: normal;
+    --detail-font-size: normal;
+
+    --main-background-color: white;
+    --main-text-color: black;
+    --accented-background-color: #eee;
+    --more-accented-background-color: #ccc;
+    --header-background-color: #f8f8f8;
+    --button-background-color: #eee;
+    --button-border-color: #ddd;
+    --button-text-color: black;
+    --button-border-radius: 5px;
+    --muted-text-color: #444;
+    --input-text-color: black;
+    --input-background-color: white;
+    --modal-background-color: white;
+    --hover-item-text-color: black;
+    --hover-item-background-color: #eee;
+    --active-item-text-color: black;
+    --active-item-background-color: #ccc;
+    --menu-text-color: black;
+    --menu-background-color: white;
+}
+
+body.theme-black {
+    --main-background-color: black;
+    --main-text-color: white;
+    --accented-background-color: #222;
+    --more-accented-background-color: #444;
+    --header-background-color: black;
+    --button-background-color: #333;
+    --button-border-color: #444;
+    --button-text-color: white;
+    --button-border-radius: 5px;
+    --muted-text-color: #ccc;
+    --input-text-color: white;
+    --input-background-color: black;
+    --modal-background-color: #222;
+    --hover-item-text-color: black;
+    --hover-item-background-color: #aaa;
+    --active-item-text-color: black;
+    --active-item-background-color: #ccc;
+    --menu-text-color: white;
+    --menu-background-color: #222;
+}
+
+body.theme-black .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+body.theme-dark {
+    --main-background-color: #333;
+    --main-text-color: white;
+    --accented-background-color: #555;
+    --more-accented-background-color: #777;
+    --header-background-color: #333;
+    --button-background-color: #555;
+    --button-border-color: #444;
+    --button-text-color: white;
+    --button-border-radius: 5px;
+    --muted-text-color: #ccc;
+    --input-text-color: white;
+    --input-background-color: #333;
+    --modal-background-color: #555;
+    --hover-item-text-color: black;
+    --hover-item-background-color: #aaa;
+    --active-item-text-color: black;
+    --active-item-background-color: #ccc;
+    --menu-text-color: white;
+    --menu-background-color: #222;
+}
+
+body.theme-dark .CodeMirror {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+/* Rainbows in the Dark Theme @Abourass */
+body.theme-darkRainbow {
+  --main-background-color: #191927;
+  --main-text-color: rgba(244, 246, 255, 1);
+  --accented-background-color: #555;
+  --more-accented-background-color: #777;
+  --header-background-color: #333;
+  --button-background-color: #222230;
+  --button-border-color: #444;
+  --button-text-color: rgb(244, 246, 255);
+  --button-border-radius: 4px;
+  --muted-text-color: #ccc;
+  --input-text-color: white;
+  --input-background-color: #333;
+  --modal-background-color: #555;
+  --hover-item-text-color: black;
+  --hover-item-background-color: #aaa;
+  --active-item-text-color: black;
+  --active-item-background-color: #ccc;
+  --menu-text-color: white;
+  --menu-background-color: #222;
+}
+body.theme-darkRainbow #header {
+  background-color: #434167;
+}
+body.theme-darkRainbow .btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+  border-color: transparent !important;
+  background-color: #eeeeee59 !important;
+  box-shadow: 0px 6px 6px 0px hsla(0, 0%, 0%, 0.05) !important;
+}
+body.theme-darkRainbow #global-buttons {
+  border-radius: 4px !important;
+  border: 0 !important;
+  box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2) !important;
+  background-color: #222230 !important;
+  color: rgb(244, 246, 255) !important;
+  border-top: 3px solid #e7bbec !important;
+}
+body.theme-darkRainbow .ui-fancytree {
+  background-color: #222230 !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+}
+body.theme-darkRainbow ul.fancytree-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+body.theme-darkRainbow ul.fancytree-container li {
+  color: #bb0707 !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(2n) {
+  color: #ce4c19 !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(3n) {
+  color: #e2cd2b !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(4n) {
+  color: #2bb343 !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(5n) {
+  color: #2bacb3 !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(6n) {
+  color: #4f67bf !important;
+}
+body.theme-darkRainbow ul.fancytree-container li:nth-child(7n) {
+  color: #7b4fbf !important;
+}
+body.theme-darkRainbow .dropdown.hide-toggle {
+  padding-left: 10px;
+}
+body.theme-darkRainbow span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+}
+body.theme-darkRainbow span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  background-color: #42424278 !important;
+}
+body.theme-darkRainbow p {
+  font-size: 17.3px !important;
+  color: hsl(0, 1%, 2%) !important;
+}
+body.theme-darkRainbow #title-container {
+  background-color: #35353e7d;
+  margin-right: 0.7rem;
+  margin-top: 0rem;
+  border-radius: 0.4rem;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-top: 3px solid #54caefd6
+}
+body.theme-darkRainbow #note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
+}
+body.theme-darkRainbow #note-detail-component-wrapper {
+  background-color: #8786a03d !important;
+  color: white !important;
+}
+body.theme-darkRainbow .CodeMirror-lines {
+  font-family: Raleway;
+  font-size: 0.9rem;
+  color: #ced246eb;
+}
+body.theme-darkRainbow .cm-s-default .cm-qualifier {
+  color: #07f2ff;
+}
+body.theme-darkRainbow .cm-s-default .cm-number {
+  color: #23d08b;
+}
+body.theme-darkRainbow .cm-atom {
+  color: #c8c1ff;
+}
+body.theme-darkRainbow span.cm-keyword {
+  color: #ffffffed !important;
+}
+body.theme-darkRainbow span.cm-builtin {
+  color: #ff8de6 !important;
+}
+body.theme-darkRainbow span.cm-tag {
+  color: #ff7a9e !important;
+}
+body.theme-darkRainbow span.cm-variable-2 {
+  color: #ffdcfae6 !important;
+}
+body.theme-darkRainbow span.cm-variable-3 {
+  color: #49e040 !important;
+}
+body.theme-darkRainbow #note-detail-text {
+  color: #fffdfdde !important;
+}
+body.theme-darkRainbow #note-detail-text p {
+  color: #fffdfdde !important;
+}
+body.theme-darkRainbow #note-detail-wrapper {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  background-color: #00000070 !important;
+  color: whitesmoke !important;
+}
+body.theme-darkRainbow figure {
+  background-color: grey;
+}
+body.theme-darkRainbow div#note-detail-text p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-indent: 0.9rem;
+}
+body.theme-darkRainbow .child-overview { /* Makes them pop on the dark background */
+  font-size: 1.1rem;
+  background: #c8d4c91f;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+body.theme-darkRainbow #children-overview { /* Fixes the child note previews being to far to the left */
+  padding-left: 1rem;
+}
+body.theme-darkRainbow span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  border-color: #ddd !important;
+  border-radius: 3.2px;
+  background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, #0072ff, violet) !important;
+  background: -o-linear-gradient(right, red, orange, yellow, green, cyan, #0072ff, violet) !important;
+  background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, #0072ff, violet) !important;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, #0072ff, violet) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 11em;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+/* Purple Rain Theme @Abourass */
+body.theme-purpleRain {
+  --main-background-color: #141019;
+  --main-text-color: rgba(255, 255, 255, 1);
+  --accented-background-color: rgb(31, 29, 33);
+  --more-accented-background-color: rgb(31, 29, 33);
+  --header-background-color: rgb(53, 45, 61);
+  --button-background-color: #222230;
+  --button-border-color: #444;
+  --button-text-color: rgb(0, 0, 0);
+  --button-border-radius: 4px;
+  --muted-text-color: #fff;
+  --input-text-color: white;
+  --input-background-color: rgb(40, 31, 49);
+  --modal-background-color: #412f56;
+  --hover-item-text-color: rgb(254, 244, 255);
+  --hover-item-background-color: rgba(81, 57, 84, 0.288);
+  --active-item-text-color: #dde2dd;
+  --active-item-background-color: rgba(72, 13, 54, 0.58);
+  --menu-text-color: white;
+  --menu-background-color: #222;
+}
+body.theme-purpleRain #header {
+  background-color: #434167!important;
+  box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2);
+}
+body.theme-purpleRain #tree {
+  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
+}
+body.theme-purpleRain .btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+  border-color: transparent !important;
+  background-color: #7f7cb1ed !important;
+  box-shadow: 0px 6px 6px 0px hsla(180, 4%, 27%, 0.315) !important;
+  color: #020202;
+}
+body.theme-purpleRain input#note-title:focus {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+}
+body.theme-purpleRain input#note-title:focus-within {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+}
+body.theme-purpleRain #global-buttons {
+  border-radius: 4px !important;
+  border: 0 !important;
+  box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2) !important;
+  background-color: #25242d !important;
+  color: rgb(244, 246, 255) !important;
+  border-top: 3px solid #e7bbec !important;
+}
+body.theme-purpleRain .ui-fancytree {
+  background-color: #2a30386b!important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33);
+}
+body.theme-purpleRain ul.fancytree-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+body.theme-purpleRain ul.fancytree-container li {
+  color: #bd16ff !important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(2n) {
+  color: #ab69bf !important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(3n) {
+  color: #c663de!important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(4n) {
+  color: #df7fe0!important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(5n) {
+  color: #d09fce!important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(6n) {
+  color: #d4b5cf !important;
+}
+body.theme-purpleRain ul.fancytree-container li:nth-child(7n) {
+  color: #e6cddc !important;
+}
+body.theme-purpleRain .dropdown.hide-toggle {
+  padding-left: 10px;
+}
+body.theme-purpleRain span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+}
+body.theme-purpleRain span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  background-color: #42424278 !important;
+}
+body.theme-purpleRain p {
+  font-size: 17.3px !important;
+  color: hsl(0, 1%, 2%) !important;
+}
+body.theme-purpleRain #title-container {
+  background-color: #25242d;
+  margin-right: 0.7rem;
+  margin-top: 0rem;
+  border-radius: 0.4rem;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-top: 3px solid #9886b5bd!important
+}
+body.theme-purpleRain #note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
+}
+body.theme-purpleRain #note-detail-component-wrapper {
+  background-color: #8786a03d !important;
+  color: white !important;
+}
+body.theme-purpleRain .CodeMirror-lines {
+  font-family: Raleway;
+  font-size: 0.9rem;
+  color: #ced246eb;
+}
+body.theme-purpleRain .cm-s-default .cm-qualifier {
+  color: #07f2ff;
+}
+body.theme-purpleRain .cm-s-default .cm-number {
+  color: #23d08b;
+}
+body.theme-purpleRain .cm-atom {
+  color: #c8c1ff;
+}
+body.theme-purpleRain span.cm-keyword {
+  color: #ffffffed !important;
+}
+body.theme-purpleRain span.cm-builtin {
+  color: #ff8de6 !important;
+}
+body.theme-purpleRain span.cm-tag {
+  color: #ff7a9e !important;
+}
+body.theme-purpleRain span.cm-variable-2 {
+  color: #ffdcfae6 !important;
+}
+body.theme-purpleRain span.cm-variable-3 {
+  color: #49e040 !important;
+}
+body.theme-purpleRain #note-detail-text p {
+  color: #fffdfdf0 !important;
+}
+body.theme-purpleRain #note-detail-wrapper {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  background-color: #000000b5 !important;
+  color: whitesmoke !important;
+}
+body.theme-purpleRain figure {
+  background-color: #4a4a4ad9;;
+}
+body.theme-purpleRain figure:focus {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 41%, 0.56);
+}
+body.theme-purpleRain div#note-detail-text p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-indent: 0.9rem;
+}
+body.theme-purpleRain .child-overview { /* Makes them pop on the dark background */
+  font-size: 1.1rem;
+  background: #c8d4c91f;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+body.theme-purpleRain #children-overview { /* Fixes the child note previews being to far to the left */
+  padding-left: 1rem;
+}
+
+html {
+    /* this fixes FF filter vs. position fixed bug: https://github.com/zadam/trilium/issues/233 */
+    height: 100%;
+}
+
+body {
+    /* Fix for CKEditor block gutter icon "stretching" body and causing scrollbar to appear after pressing enter
+       on the last line of the editor. */
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+input, select {
+    color: var(--input-text-color) !important;
+    background: var(--input-background-color) !important;
+}
+
+.input-group-text {
+    background-color: var(--accented-background-color) !important;
+    color: var(--muted-text-color) !important;
+}
+
+button.close {
+    color: var(--main-text-color);
+}
+
+.modal-content {
+    background-color: var(--modal-background-color) !important;
+}
+
+.nav-link.active {
+    background-color: var(--more-accented-background-color) !important;
+    color: var(--main-text-color) !important;
+}
+
+#title-container {
+    grid-area: title;
+}
+
+#note-title {
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 150%;
+    border: 0;
+    width: 5em;
+    flex-grow: 100;
+}
+
+ul.fancytree-container {
+    /* override specific size from fancytree.css */
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+
+.fancytree-title {
+    margin-left: 7px !important;
+}
+
+.fancytree-node:not(.fancytree-loading) .fancytree-expander {
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+.fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
+    font-family: 'jam-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    content: "\e9bc";
+}
+
+/* this is done to preserve correct indentation. Better solution would be preferable */
+.fancytree-node:not(.fancytree-folder) .fancytree-expander:before {
+    color: white;
+}
+
+.fancytree-node.fancytree-expanded .fancytree-expander:before {
+    content: "\e9ba";
+}
+
+#note-title[readonly] {
+    background: inherit;
+}
+
+.tdialog {
+    display: none;
+}
+
+#note-detail-wrapper {
+    position: relative;
+    overflow: hidden;
+    grid-area: note-detail;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#note-detail-component-wrapper {
+    flex-grow: 100;
+    position: relative;
+    overflow: auto;
+    flex-basis: content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.note-detail-component {
+    flex-grow: 100;
+    display: none;
+}
+
+#note-detail-text h1 { font-size: 2.0em; }
+#note-detail-text h2 { font-size: 1.8em; }
+#note-detail-text h3 { font-size: 1.6em; }
+#note-detail-text h4 { font-size: 1.4em; }
+#note-detail-text h5 { font-size: 1.2em; }
+#note-detail-text h6 { font-size: 1.1em; }
+
+#note-detail-text {
+    border: 0 !important;
+    box-shadow: none !important;
+    /* This is because with empty content height of editor is 0 and it's impossible to click into it */
+    min-height: 200px;
+    overflow: auto;
+}
+
+/** we disable shield background when in distraction free mode because I couldn't get it to stay static
+    (it kept growing with content) */
+#container:not(.distraction-free-mode) #note-detail-wrapper.protected {
+    /* DON'T COLLAPSE THE RULES INTO SINGLE ONE, BACKGROUND WON'T DISPLAY */
+    background: url('../images/shield.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+ul.fancytree-container {
+    outline: none !important;
+    background-color: inherit !important;
+}
+
+.fancytree-custom-icon {
+    font-size: 1.3em;
+}
+
+span.fancytree-title {
+    color: inherit !important;
+    background: inherit !important;
+}
+
+span.fancytree-node.protected > span.fancytree-custom-icon {
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+span.fancytree-node.multiple-parents .fancytree-title {
+    text-decoration: underline dotted;
+}
+
+span.fancytree-node.fancytree-active-clone:not(.fancytree-active) .fancytree-title {
+    font-weight: bold;
+}
+
+/* first nesting level has lower left padding to avoid extra left padding. Other levels are not affected */
+.ui-fancytree > li > ul {
+    padding-left: 5px;
+}
+
+span.fancytree-active.fancytree-focused .fancytree-title {
+    color: var(--active-item-text-color) !important;
+    background-color: var(--active-item-background-color) !important;
+    border-color: #ddd !important;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+    color: var(--hover-item-text-color) !important;
+    background-color: var(--hover-item-background-color) !important;
+    border-color: #ddd !important;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+span.fancytree-selected:not(.fancytree-active) .fancytree-title {
+    color: var(--hover-item-text-color) !important;
+    background-color: var(--hover-item-background-color) !important;
+    border-color: #ddd !important;
+    border-radius: 3px;
+    font-style: italic;
+}
+
+span.fancytree-node:not(.fancytree-active):hover span.fancytree-title {
+    color: var(--hover-item-text-color) !important;
+    background-color: var(--hover-item-background-color) !important;
+    border-color: #ddd !important;
+    border-radius: 3px;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+.icon-action:hover {
+    text-decoration: none;
+}
+
+.icon-action {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.ui-widget-content a:not(.ui-tabs-anchor) {
+    color: #337ab7 !important;
+}
+
+div.ui-tooltip {
+    max-width: 600px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.alert {
+    padding: 5px;
+    width: auto;
+}
+
+#search-results {
+    padding: 0 5px 5px 15px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 10px;
+    display: none;
+    overflow: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+#search-results ul {
+    padding: 5px 5px 5px 15px;
+}
+
+/*
+* .electron-in-page-search-window is a class specified to default
+* <webview> element for search window.
+*/
+.electron-in-page-search-window {
+    position: fixed;
+    top: 45px;
+    right: 10px;
+    width: 360px;
+    height: 55px;
+    display: none;
+    z-index: 1001;
+}
+
+/*
+* .search-inactive is added to search window <webview> when the window
+* is inactive.
+*/
+.search-inactive {
+    visibility: hidden;
+}
+
+/*
+* .search-inactive is added to search window <webview> when the window
+* is active.
+*/
+.search-active {
+    visibility: visible;
+}
+
+.electronSearchText-box {
+    display: none;
+}
+.electronSearchText-visible {
+    display: block;
+}
+
+/* Allow to use <kbd> elements inside the title to define shortcut hints. */
+.ui-menu kbd, button kbd {
+    color: var(--muted-text-color);
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.ui-menu kbd {
+    margin-left: 30px;
+    float: right;
+}
+
+#note-source {
+    height: 98%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.suppressed {
+    display: none;
+}
+
+.dropdown-menu {
+    color: var(--menu-text-color) !important;
+    background-color: var(--menu-background-color) !important;
+}
+
+.dropdown-menu a:hover:not(.disabled) {
+    color: var(--hover-item-text-color) !important;
+    background-color: var(--hover-item-background-color) !important;
+    cursor: pointer;
+}
+
+.dropdown-menu a:not(.selected) .check {
+    visibility: hidden;
+}
+
+.dropdown-menu kbd
+{
+    color: var(--muted-text-color);
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.dropdown-menu kbd {
+    float: right;
+}
+
+.dropdown-item.disabled, .dropdown-item.disabled kbd {
+    color: #aaa !important;
+}
+
+#note-detail-code {
+    min-height: 200px;
+    overflow: auto;
+}
+
+#note-detail-render {
+    min-height: 200px;
+}
+
+.CodeMirror {
+    font-family: "Liberation Mono", "Lucida Console", monospace;
+    height: auto;
+    background: inherit;
+}
+
+.CodeMirror-scroll {
+    min-height: 200px;
+}
+
+#note-id-display {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    z-index: 1000;
+    color: lightgrey;
+}
+
+#note-type-dropdown {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cm-matchhighlight {background-color: #eeeeee}
+
+#attribute-list {
+    overflow: auto;
+    /* limiting the size since actual note content is more important */
+    max-height: 30%;
+}
+
+#label-list, #relation-list, #attribute-list {
+    color: #777777;
+    padding: 5px;
+    display: none;
+}
+
+#label-list button, #relation-list button, #attribute-list button {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+#file-table th, #file-table td {
+    padding: 10px;
+    font-size: larger;
+}
+
+#children-overview {
+    flex-grow: 1000;
+    flex-shrink: 1000;
+    flex-basis: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 110px;
+    overflow: auto;
+}
+
+.child-overview {
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    background: var(--accented-background-color);
+    width: 150px;
+    height: 90px;
+    line-height: 2em;
+    margin-right: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 15px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.child-overview a {
+    color: var(--muted-text-color);
+}
+
+#sql-console-query {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#sql-console-query .CodeMirror {
+    height: 150px;
+}
+
+.btn {
+    border-radius: var(--button-border-radius);
+}
+
+.btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+    border-color: var(--button-border-color);
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+}
+
+.btn.active:not(.btn-primary) {
+    background-color: #ccc !important;
+}
+
+#note-path-list a.current {
+    font-weight: bold;
+}
+
+button.icon-button {
+    font-size: 1.5em;
+    padding: 2px;
+}
+
+#note-actions {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#note-actions .dropdown-menu {
+    width: 15em;
+}
+
+.ck.ck-block-toolbar-button {
+    transform: translateX(10px);
+}
+
+#note-detail-promoted-attributes {
+    margin: auto;
+    /* setting the display to block since "table" doesn't support scrolling */
+    display: block;
+    flex-basis: content;
+    flex-shrink: 1;
+    flex-grow: 0;
+    overflow: auto;
+}
+
+#note-detail-promoted-attributes td, #note-detail-promoted-attributes th {
+    padding: 5px;
+}
+
+#note-detail-image {
+    text-align: center;
+}
+
+#note-detail-image-view {
+    max-width: 100%;
+}
+
+#file-preview-content {
+    background-color: #f6f6f6;
+    padding: 15px;
+    max-width: 600px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.show-recent-notes-button {
+    cursor: pointer;
+    font-size: 1.3em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input-clearer-button {
+    cursor: pointer;
+    font-size: 1.3em;
+    background: inherit !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.open-external-link-button {
+    cursor: pointer;
+    font-size: 1.3em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.go-to-selected-note-button {
+    cursor: pointer;
+    font-size: 1.3em;
+    padding-left: 4px;
+    padding-right: 3px;
+}
+
+.go-to-selected-note-button.disabled, .go-to-selected-note-button.disabled:hover {
+    cursor: inherit;
+    color: #ccc !important;
+}
+
+.note-autocomplete-input {
+    /* this is for seamless integration of "input clearer" button */
+    border-right: 0;
+}
+
+table.promoted-attributes-in-tooltip {
+    margin: auto;
+}
+
+table.promoted-attributes-in-tooltip td, table.promoted-attributes-in-tooltip th {
+    padding: 10px;
+}
+
+#note-detail-render-help {
+    margin: 50px;
+    padding: 20px;
+}
+
+/* if modal height overflows, then only modal body scrolls */
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+/* this should help with tooltip flickering */
+.tooltip {
+    pointer-events: none;
+}
+
+.tooltip-inner {
+    background-color: var(--accented-background-color) !important;
+    max-width: 400px;
+    /* height needs to stay small because tooltip has problem when it can't fit to either top or bottom of the cursor */
+    max-height: 300px;
+    overflow: hidden;
+    color: var(--main-text-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tooltip-inner img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.tooltip-inner figure.image-style-side {
+    float: right;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.algolia-autocomplete {
+    width: calc(100% - 30px);
+    z-index: 2000 !important;
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 100%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu {
+    width: 100%;
+    background-color: var(--main-background-color);
+    border: 1px solid #999;
+    border-top: none;
+    z-index: 2000 !important;
+    max-height: 500px;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px;
+    margin: 0;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion p {
+    padding: 0;
+    margin: 0;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    color: var(--hover-item-text-color);
+    background-color: var(--hover-item-background-color);
+}
+
+.help-button {
+    float: right;
+    background: none;
+    font-weight: 900;
+    color: orange;
+    border: 0;
+    cursor: pointer;
+}
+
+.multiplicity {
+    font-size: 1.3em;
+}
+
+/* this is because bootstrap (?) sets code color to red for some reason */
+code {
+    color: inherit !important;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.fadeOutUp {
+    animation-name: fadeOutUp;
+}
+
+div[data-notify="container"] {
+    text-align: center;
+}
+
+#saved-indicator {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 150%;
+    color: #777;
+    z-index: 100;
+}
+
+#export-form .form-check {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#export-form .format-choice {
+    padding-left: 40px;
+    display: none;
+}
+
+#export-form .form-check-label {
+    padding: 2px;
+}
+
+.unhoist-button {
+    text-decoration: underline !important;
+    color: blue !important;
+    cursor: pointer !important;
+}
+
+#protected-session-password-component {
+    max-width: 450px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.ck-editor__is-empty.ck-content.ck-editor__editable::before {
+    content: 'You can start writing note here ...';
+    position: absolute;
+    display: block;
+
+    margin: var(--ck-spacing-large) 0;
+
+    color: #aaa;
+}
+
+.fancytree-loading span.fancytree-expander {
+    background-image: none !important;
+    display: inline-block;
+}
+
+.fancytree-loading  span.fancytree-expander:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border-color: #000 transparent #000 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ck-content .image > figcaption {
+    color: var(--main-text-color);
+    background-color: var(--accented-background-color);
+}
+
+#options-dialog input[type=number] {
+    text-align: right;
+}
