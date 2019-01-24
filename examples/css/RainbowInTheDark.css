@@ -169,8 +169,11 @@ span.fancytree-active:not(.fancytree-focused) .fancytree-title {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 400 !important;
   width: 11em;
   overflow: hidden;
   text-overflow: clip;
+}
+.fancytree-title{
+  font-weight:400!important;
 }
