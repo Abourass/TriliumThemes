@@ -177,3 +177,7 @@ span.fancytree-active:not(.fancytree-focused) .fancytree-title {
 .fancytree-title{
   font-weight:400!important;
 }
+#tree {
+  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
+}
