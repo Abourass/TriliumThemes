@@ -6,12 +6,15 @@ Currently I am up to date with the **v0.28.3 release**
 Current Themes Included:
 ------
 
-**Purple Rain**
+Purple Rain
 ![Purple Rain Theme](https://i.imgur.com/DMT7xOp.png)
-**Rainbow in the Dark**
-![Rainbow in the Dark Theme](https://i.imgur.com/ahRW6gh.png)
+-------
 
-The Code Editor is also themed:
+Rainbow in the Dark
+![Rainbow in the Dark Theme](https://i.imgur.com/ahRW6gh.png)
+-------
+
+The Code Editor is also themed
 ![Code Lens Theme](https://i.imgur.com/qDyKVnv.png)
 -------
 
