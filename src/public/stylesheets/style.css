@@ -237,6 +237,13 @@ body.theme-darkRainbow .child-overview { /* Makes them pop on the dark backgroun
 body.theme-darkRainbow #children-overview { /* Fixes the child note previews being to far to the left */
   padding-left: 1rem;
 }
+body.theme-darkRainbow .fancytree-title{
+  font-weight:400!important;
+}
+body.theme-darkRainbow #tree {
+  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
+}
 body.theme-darkRainbow span.fancytree-active:not(.fancytree-focused) .fancytree-title {
   border-color: #ddd !important;
   border-radius: 3.2px;
@@ -258,7 +265,7 @@ body.theme-darkRainbow span.fancytree-active:not(.fancytree-focused) .fancytree-
 body.theme-purpleRain {
   --main-background-color: #141019;
   --main-text-color: rgba(255, 255, 255, 1);
-  --accented-background-color: rgb(31, 29, 33);
+  --accented-background-color: #c49df1;
   --more-accented-background-color: rgb(31, 29, 33);
   --header-background-color: rgb(53, 45, 61);
   --button-background-color: #222230;
@@ -412,7 +419,11 @@ body.theme-purpleRain #note-detail-wrapper {
   color: whitesmoke !important;
 }
 body.theme-purpleRain figure {
-  background-color: #4a4a4ad9;;
+  background-color: #4a4a4ad9;
+  color: white;
+}
+body.theme-purpleRain .fancytree-title{
+  font-weight:400!important;
 }
 body.theme-purpleRain figure:focus {
   outline-color: transparent !important;
