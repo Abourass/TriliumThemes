@@ -1,0 +1,176 @@
+body {
+  --main-background-color: #191927;
+  --main-text-color: rgba(244, 246, 255, 1);
+  --accented-background-color: #555;
+  --more-accented-background-color: #777;
+  --header-background-color: #333;
+  --button-background-color: #222230;
+  --button-border-color: #444;
+  --button-text-color: rgb(244, 246, 255);
+  --button-border-radius: 4px;
+  --muted-text-color: #ccc;
+  --input-text-color: white;
+  --input-background-color: #333;
+  --modal-background-color: #555;
+  --hover-item-text-color: black;
+  --hover-item-background-color: #aaa;
+  --active-item-text-color: black;
+  --active-item-background-color: #ccc;
+  --menu-text-color: white;
+  --menu-background-color: #222;
+}
+#header {
+  background-color: #434167;
+}
+.btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+  border-color: transparent !important;
+  background-color: #eeeeee59 !important;
+  box-shadow: 0px 6px 6px 0px hsla(0, 0%, 0%, 0.05) !important;
+}
+#global-buttons {
+  border-radius: 4px !important;
+  border: 0 !important;
+  box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2) !important;
+  background-color: #222230 !important;
+  color: rgb(244, 246, 255) !important;
+  border-top: 3px solid #e7bbec !important;
+}
+.ui-fancytree {
+  background-color: #222230 !important;
+  border: 0 !important;
+  border-radius: 4px !important;
+}
+ul.fancytree-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+ul.fancytree-container li {
+  color: #bb0707 !important;
+}
+ul.fancytree-container li:nth-child(2n) {
+  color: #ce4c19 !important;
+}
+ul.fancytree-container li:nth-child(3n) {
+  color: #e2cd2b !important;
+}
+ul.fancytree-container li:nth-child(4n) {
+  color: #2bb343 !important;
+}
+ul.fancytree-container li:nth-child(5n) {
+  color: #2bacb3 !important;
+}
+ul.fancytree-container li:nth-child(6n) {
+  color: #4f67bf !important;
+}
+ul.fancytree-container li:nth-child(7n) {
+  color: #7b4fbf !important;
+}
+.dropdown.hide-toggle {
+  padding-left: 10px;
+}
+span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+}
+span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  background-color: #42424278 !important;
+}
+p {
+  font-size: 17.3px !important;
+  color: hsl(0, 1%, 2%) !important;
+}
+#title-container {
+  background-color: #35353e7d;
+  margin-right: 0.7rem;
+  margin-top: 0rem;
+  border-radius: 0.4rem;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-top: 3px solid #54caefd6
+}
+#note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
+}
+#note-detail-component-wrapper {
+  background-color: #8786a03d !important;
+  color: white !important;
+}
+.CodeMirror-lines {
+  font-family: Raleway;
+  font-size: 0.9rem;
+  color: #ced246eb;
+}
+.cm-s-default .cm-qualifier {
+  color: #07f2ff;
+}
+.cm-s-default .cm-number {
+  color: #23d08b;
+}
+.cm-atom {
+  color: #c8c1ff;
+}
+span.cm-keyword {
+  color: #ffffffed !important;
+}
+span.cm-builtin {
+  color: #ff8de6 !important;
+}
+span.cm-tag {
+  color: #ff7a9e !important;
+}
+span.cm-variable-2 {
+  color: #ffdcfae6 !important;
+}
+span.cm-variable-3 {
+  color: #49e040 !important;
+}
+#note-detail-text {
+  color: #fffdfdde !important;
+}
+#note-detail-text p {
+  color: #fffdfdde !important;
+}
+#note-detail-wrapper {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  background-color: #00000070 !important;
+  color: whitesmoke !important;
+}
+figure {
+  background-color: grey;
+}
+div#note-detail-text p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-indent: 0.9rem;
+}
+.child-overview { /* Makes them pop on the dark background */
+  font-size: 1.1rem;
+  background: #c8d4c91f;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+#children-overview { /* Fixes the child note previews being to far to the left */
+  padding-left: 1rem;
+}
+span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  border-color: #ddd !important;
+  border-radius: 3.2px;
+  background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, #0072ff, violet) !important;
+  background: -o-linear-gradient(right, red, orange, yellow, green, cyan, #0072ff, violet) !important;
+  background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, #0072ff, violet) !important;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, #0072ff, violet) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 11em;
+  overflow: hidden;
+  text-overflow: clip;
+}

@@ -1,0 +1,176 @@
+body {
+  --main-background-color: #141019;
+  --main-text-color: rgba(255, 255, 255, 1);
+  --accented-background-color: rgb(31, 29, 33);
+  --more-accented-background-color: rgb(31, 29, 33);
+  --header-background-color: rgb(53, 45, 61);
+  --button-background-color: #222230;
+  --button-border-color: #444;
+  --button-text-color: rgb(0, 0, 0);
+  --button-border-radius: 4px;
+  --muted-text-color: #fff;
+  --input-text-color: white;
+  --input-background-color: rgb(40, 31, 49);
+  --modal-background-color: #412f56;
+  --hover-item-text-color: rgb(254, 244, 255);
+  --hover-item-background-color: rgba(81, 57, 84, 0.288);
+  --active-item-text-color: #dde2dd;
+  --active-item-background-color: rgba(72, 13, 54, 0.58);
+  --menu-text-color: white;
+  --menu-background-color: #222;
+}
+#header {
+  background-color: #434167!important;
+  box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2);
+}
+#tree {
+  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
+}
+.btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+  border-color: transparent !important;
+  background-color: #7f7cb1ed !important;
+  box-shadow: 0px 6px 6px 0px hsla(180, 4%, 27%, 0.315) !important;
+  color: #020202;
+}
+input#note-title:focus {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+}
+input#note-title:focus-within {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+}
+#global-buttons {
+  border-radius: 4px !important;
+  border: 0 !important;
+  box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2) !important;
+  background-color: #25242d !important;
+  color: rgb(244, 246, 255) !important;
+  border-top: 3px solid #e7bbec !important;
+}
+.ui-fancytree {
+  background-color: #2a30386b!important;
+  border: 0 !important;
+  border-radius: 4px !important;
+  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33);
+}
+ul.fancytree-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+ul.fancytree-container li {
+  color: #bd16ff !important;
+}
+ul.fancytree-container li:nth-child(2n) {
+  color: #ab69bf !important;
+}
+ul.fancytree-container li:nth-child(3n) {
+  color: #c663de!important;
+}
+ul.fancytree-container li:nth-child(4n) {
+  color: #df7fe0!important;
+}
+ul.fancytree-container li:nth-child(5n) {
+  color: #d09fce!important;
+}
+ul.fancytree-container li:nth-child(6n) {
+  color: #d4b5cf !important;
+}
+ul.fancytree-container li:nth-child(7n) {
+  color: #e6cddc !important;
+}
+.dropdown.hide-toggle {
+  padding-left: 10px;
+}
+span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+}
+span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  background-color: #42424278 !important;
+}
+p {
+  font-size: 17.3px !important;
+  color: hsl(0, 1%, 2%) !important;
+}
+#title-container {
+  background-color: #25242d;
+  margin-right: 0.7rem;
+  margin-top: 0rem;
+  border-radius: 0.4rem;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-top: 3px solid #9886b5bd!important
+}
+#note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
+}
+#note-detail-component-wrapper {
+  background-color: #8786a03d !important;
+  color: white !important;
+}
+.CodeMirror-lines {
+  font-family: Raleway;
+  font-size: 0.9rem;
+  color: #ced246eb;
+}
+.cm-s-default .cm-qualifier {
+  color: #07f2ff;
+}
+.cm-s-default .cm-number {
+  color: #23d08b;
+}
+.cm-atom {
+  color: #c8c1ff;
+}
+span.cm-keyword {
+  color: #ffffffed !important;
+}
+span.cm-builtin {
+  color: #ff8de6 !important;
+}
+span.cm-tag {
+  color: #ff7a9e !important;
+}
+span.cm-variable-2 {
+  color: #ffdcfae6 !important;
+}
+span.cm-variable-3 {
+  color: #49e040 !important;
+}
+#note-detail-text p {
+  color: #fffdfdf0 !important;
+}
+#note-detail-wrapper {
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+  background-color: #000000b5 !important;
+  color: whitesmoke !important;
+}
+figure {
+  background-color: #4a4a4ad9;;
+}
+figure:focus {
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 41%, 0.56);
+}
+div#note-detail-text p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-indent: 0.9rem;
+}
+.child-overview { /* Makes them pop on the dark background */
+  font-size: 1.1rem;
+  background: #c8d4c91f;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+#children-overview { /* Fixes the child note previews being to far to the left */
+  padding-left: 1rem;
+}
