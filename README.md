@@ -1,4 +1,4 @@
-# TriliumThemes
+# Trilium Themes
 A few custom themes for the delightful [Trilium Notebook app](https://github.com/zadam/trilium).
 
 Currently I am up to date with the **v0.28.3 release**
