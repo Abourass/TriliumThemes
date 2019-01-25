@@ -265,9 +265,10 @@ body.theme-darkRainbow span.fancytree-active:not(.fancytree-focused) .fancytree-
 body.theme-purpleRain {
   --main-background-color: #141019;
   --main-text-color: rgba(255, 255, 255, 1);
-  --accented-background-color: #c49df1;
+  --accented-background-color: #c49df1; /* This is used as the background on the hover preview of children notes */
   --more-accented-background-color: rgb(31, 29, 33);
-  --header-background-color: rgb(53, 45, 61);
+  --header-background-color: #434167; /* This is the background color on the header toolbar */ /* This is for the colored strip on the top of the boxes */
+  --header-box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2);
   --button-background-color: #222230;
   --button-border-color: #444;
   --button-text-color: rgb(0, 0, 0);
@@ -282,46 +283,50 @@ body.theme-purpleRain {
   --active-item-background-color: rgba(72, 13, 54, 0.58);
   --menu-text-color: white;
   --menu-background-color: #222;
+  --global-buttons-icon-color: rgb(244, 246, 255); /* This is for the icons on the global buttons toolbar */
+  --global-buttons-background-color: #25242d; /* This is for the background color on the global buttons toolbar */
+  --global-buttons-border-radius: 4px;
+  --global-buttons-border-thickness: 0;
+  --global-buttons-box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2);
+  --global-top-border: 3px solid #e7bbec;
+  --tree-background-color: #2a30386b; /* This is the background color on the navigation tree */
+  --tree-border-radius: 4px; 
 }
 body.theme-purpleRain #header {
-  background-color: #434167!important;
-  box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2);
+  background-color: var(--header-background-color)!important;
+  box-shadow: var(--header-box-shadow) !important;
 }
-body.theme-purpleRain #tree {
-  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
-  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
+body.theme-purpleRain #global-buttons { /* Create new note and other Primary Buttons, upper left of screen */
+  background-color: var(--global-buttons-background-color) !important;
+  color: var(--global-buttons-icon-color) !important;
+  border: var(--global-buttons-border-thickness) !important;
+  border-top: var(--global-top-border)!important;
+  border-radius: var(--global-buttons-border-radius) !important;
+  box-shadow: var(--global-buttons-box-shadow) !important;
 }
-body.theme-purpleRain .btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+body.theme-purpleRain .btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) { /* Buttons on Toolbars */
   border-color: transparent !important;
   background-color: #7f7cb1ed !important;
   box-shadow: 0px 6px 6px 0px hsla(180, 4%, 27%, 0.315) !important;
   color: #020202;
 }
-body.theme-purpleRain input#note-title:focus {
-  outline-color: transparent !important;
-  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
-}
-body.theme-purpleRain input#note-title:focus-within {
-  outline-color: transparent !important;
-  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
-}
-body.theme-purpleRain #global-buttons {
-  border-radius: 4px !important;
-  border: 0 !important;
-  box-shadow: 0px 2px 5px -1px hsla(0, 1%, 16%, 0.2) !important;
-  background-color: #25242d !important;
-  color: rgb(244, 246, 255) !important;
-  border-top: 3px solid #e7bbec !important;
+
+/* Tree Theme */
+body.theme-purpleRain #tree {
+  overflow-y:overlay!important;   /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden!important;    /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
 }
 body.theme-purpleRain .ui-fancytree {
-  background-color: #2a30386b!important;
+  background-color: var(--tree-background-color)!important;
   border: 0 !important;
-  border-radius: 4px !important;
-  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33);
+  border-radius: var(--tree-border-radius) !important;
+  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33)!important;
+  margin-left: 10px !important;
+  margin-right: 20px !important;
 }
-body.theme-purpleRain ul.fancytree-container {
-  margin-left: 10px;
-  margin-right: 20px;
+body.theme-purpleRain span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+  font-weight:400 !important; /* I prefer using color to show active state, so don't bold */
 }
 body.theme-purpleRain ul.fancytree-container li {
   color: #bd16ff !important;
@@ -344,18 +349,23 @@ body.theme-purpleRain ul.fancytree-container li:nth-child(6n) {
 body.theme-purpleRain ul.fancytree-container li:nth-child(7n) {
   color: #e6cddc !important;
 }
-body.theme-purpleRain .dropdown.hide-toggle {
-  padding-left: 10px;
-}
-body.theme-purpleRain span.fancytree-title {
-  color: rgb(244, 246, 255) !important;
-}
 body.theme-purpleRain span.fancytree-active:not(.fancytree-focused) .fancytree-title {
   background-color: #42424278 !important;
 }
-body.theme-purpleRain p {
-  font-size: 17.3px !important;
-  color: hsl(0, 1%, 2%) !important;
+/* End Tree Theme */
+
+/* Title Theme */
+body.theme-purpleRain #note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+body.theme-purpleRain input#note-title:focus:focus-within:active{
+  outline-color: transparent !important;
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
 }
 body.theme-purpleRain #title-container {
   background-color: #25242d;
@@ -364,53 +374,17 @@ body.theme-purpleRain #title-container {
   border-radius: 0.4rem;
   padding-top: 3px;
   padding-bottom: 4px;
-  border-top: 3px solid #9886b5bd!important
+  border-top: var(--global-top-border)!important;
 }
-body.theme-purpleRain #note-title {
-  background-color: #9c94bb3b !important;
-  color: rgb(244, 246, 255) !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-  -webkit-border-radius: 0.4rem !important;
-  -moz-border-radius: 0.4rem !important;
-  border-radius: 0.4rem !important;
-  padding-left: 0.50rem !important;
+body.theme-purpleRain .dropdown.hide-toggle {
+  padding-left: 10px;
 }
-body.theme-purpleRain #note-detail-component-wrapper {
-  background-color: #8786a03d !important;
-  color: white !important;
-}
-body.theme-purpleRain .CodeMirror-lines {
-  font-family: Raleway;
-  font-size: 0.9rem;
-  color: #ced246eb;
-}
-body.theme-purpleRain .cm-s-default .cm-qualifier {
-  color: #07f2ff;
-}
-body.theme-purpleRain .cm-s-default .cm-number {
-  color: #23d08b;
-}
-body.theme-purpleRain .cm-atom {
-  color: #c8c1ff;
-}
-body.theme-purpleRain span.cm-keyword {
-  color: #ffffffed !important;
-}
-body.theme-purpleRain span.cm-builtin {
-  color: #ff8de6 !important;
-}
-body.theme-purpleRain span.cm-tag {
-  color: #ff7a9e !important;
-}
-body.theme-purpleRain span.cm-variable-2 {
-  color: #ffdcfae6 !important;
-}
-body.theme-purpleRain span.cm-variable-3 {
-  color: #49e040 !important;
-}
-body.theme-purpleRain #note-detail-text p {
-  color: #fffdfdf0 !important;
+/*End Note Title Theme */
+
+/* Note's Details AKA The Main Editor */
+body.theme-purpleRain p {
+  font-size: 17.3px !important;
+  color: hsl(0, 1%, 2%) !important;
 }
 body.theme-purpleRain #note-detail-wrapper {
   padding-left: 0px !important;
@@ -418,30 +392,48 @@ body.theme-purpleRain #note-detail-wrapper {
   background-color: #000000b5 !important;
   color: whitesmoke !important;
 }
+body.theme-purpleRain #note-detail-component-wrapper {
+  background-color: #8786a03d !important;
+  color: white !important;
+}
+body.theme-purpleRain #note-detail-text p {
+  color: #fffdfdf0 !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-indent: 0.9rem;
+}
 body.theme-purpleRain figure {
   background-color: #4a4a4ad9;
   color: white;
-}
-body.theme-purpleRain .fancytree-title{
-  font-weight:400!important;
 }
 body.theme-purpleRain figure:focus {
   outline-color: transparent !important;
   box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 41%, 0.56);
 }
-body.theme-purpleRain div#note-detail-text p {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-indent: 0.9rem;
-}
-body.theme-purpleRain .child-overview { /* Makes them pop on the dark background */
+body.theme-purpleRain .child-overview { 
   font-size: 1.1rem;
   background: #c8d4c91f;
-  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  text-align: -webkit-center;
+  margin: 0.313rem;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); /* Makes them pop on the dark background */
 }
-body.theme-purpleRain #children-overview { /* Fixes the child note previews being to far to the left */
-  padding-left: 1rem;
+body.theme-purpleRain .children-overview { 
+  padding-left: 0.5rem;
 }
+/* End Note's Details AKA The Main Editor Styling */
+
+/* CodeMirror Theme */
+body.theme-purpleRain .CodeMirror-lines { font-family: Raleway; font-size: 0.9rem; color: #ced246eb; }
+body.theme-purpleRain .cm-s-default .cm-qualifier { color: #07f2ff; }
+body.theme-purpleRain .cm-s-default .cm-number { color: #23d08b; }
+body.theme-purpleRain .cm-atom { color: #c8c1ff !important; }
+body.theme-purpleRain .cm-keyword { color: #ffffffed !important; }
+body.theme-purpleRain .cm-builtin { color: #ff8de6 !important; }
+body.theme-purpleRain .cm-tag { color: #ff7a9e !important; }
+body.theme-purpleRain .cm-variable-2 { color: #ffdcfae6 !important; }
+body.theme-purpleRain .cm-variable-3 { color: #49e040 !important; }
+/* End CodeMirror Theme */
+/* END PURPLE RAIN */
 
 html {
     /* this fixes FF filter vs. position fixed bug: https://github.com/zadam/trilium/issues/233 */
