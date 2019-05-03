@@ -123,31 +123,31 @@ p {
 .CodeMirror-lines {
   font-family: 'Fira Code', monospace;
   font-size: 0.9rem;
-  color: #ced246eb;
+  color: #1CC7F1 !important; /* Indiglo Blue */
 }
 .cm-s-default .cm-qualifier {
-  color: #07f2ff;
+  color: #12EFFB !important; /* Bright Indiglo Blue */ 
 }
 .cm-s-default .cm-number {
-  color: #23d08b;
+  color: #1BDE8D !important; /* Bright Green */
 }
 .cm-atom {
-  color: #c8c1ff;
+  color: #C8C1FF !important; /* Pale Violet */
 }
 span.cm-keyword {
-  color: #ffffffed !important;
+  color: #F2CECF !important; /* Extremely Pale / Light Pink */
 }
 span.cm-builtin {
-  color: #ff8de6 !important;
+  color: #FF8DE6 !important; /* Pepto Bismal Pink */
 }
 span.cm-tag {
-  color: #ff7a9e !important;
+  color: #E3587D !important; /* Reddish Pink */
 }
 span.cm-variable-2 {
-  color: #ffdcfae6 !important;
+  color: #FFDCFA !important; /* Pinkish White */
 }
 span.cm-variable-3 {
-  color: #49e040 !important;
+  color: #49E040 !important; /* Bright Green */
 }
 #note-detail-text p {
   color: #fffdfdf0 !important;
@@ -159,7 +159,7 @@ span.cm-variable-3 {
   color: whitesmoke !important;
 }
 figure {
-  background-color: #4a4a4ad9;;
+  background-color: #4a4a4ad9;
 }
 figure:focus {
   outline-color: transparent !important;
@@ -183,7 +183,7 @@ div#note-detail-text p {
 }
 
 .ck-content code {
-    background-color: #785d8e3d;
+    background-color: rgb(76, 38, 114) !important; /* Dark grey */
     padding: 0.4rem 0.1em;
     border-radius: 0px;
     margin-top: -0.3rem;
