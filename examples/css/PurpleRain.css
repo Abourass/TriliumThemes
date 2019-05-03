@@ -24,26 +24,25 @@ body {
 
 #header {
   background-color: #434167!important;
-  box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2);
-}
-.ui-fancytree {
-  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
-  overflow-x:hidden; /* the bottom scroll bar is dumb, we know what we named our notes, so just hide it */
-}
-
-.btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
-  border-color: transparent !important;
-  background-color: #7f7cb1ed !important;
-  box-shadow: 0px 6px 6px 0px hsla(180, 4%, 27%, 0.315) !important;
-  color: #020202;
+  box-shadow: inset 0 -1px 1px 0 hsla(0, 0%, 92%, 0.2) !important;
 }
 input#note-title:focus {
   outline-color: transparent !important;
-  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56) !important;
 }
 input#note-title:focus-within {
   outline-color: transparent !important;
-  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56);
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 29%, 0.56) !important;
+}
+#note-title {
+  background-color: #9c94bb3b !important;
+  color: rgb(244, 246, 255) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  -webkit-border-radius: 0.4rem !important;
+  -moz-border-radius: 0.4rem !important;
+  border-radius: 0.4rem !important;
+  padding-left: 0.50rem !important;
 }
 #global-buttons {
   border-radius: 4px !important;
@@ -53,15 +52,30 @@ input#note-title:focus-within {
   color: rgb(244, 246, 255) !important;
   border-top: 3px solid #e7bbec !important;
 }
+.btn:not(.btn-primary):not(.btn-secondary):not(.btn-danger) {
+  border-color: transparent !important;
+  background-color: #7f7cb1ed !important;
+  box-shadow: 0px 6px 6px 0px hsla(180, 4%, 27%, 0.315) !important;
+  color: #020202;
+}
 .ui-fancytree {
+  overflow-y:overlay!important; /*This solves the shrinking that happens from the scroll bar in the tree */
+  overflow-x:hidden; /* Remove Bottom Scroll Bar */
   background-color: #2a30386b!important;
   border: 0 !important;
   border-radius: 4px !important;
-  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33);
+  box-shadow: inset 0px 1px 3px 0 hsla(313, 15%, 26%, 0.33) !important;
+}
+span.fancytree-title {
+  color: rgb(244, 246, 255) !important;
+  font-weight:400!important;
+}
+span.fancytree-active:not(.fancytree-focused) .fancytree-title {
+  background-color: #42424278 !important;
 }
 ul.fancytree-container {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 10px !important;
+  margin-right: 20px !important;
 }
 ul.fancytree-container li {
   color: #bd16ff !important;
@@ -85,44 +99,28 @@ ul.fancytree-container li:nth-child(7n) {
   color: #e6cddc !important;
 }
 .dropdown.hide-toggle {
-  padding-left: 10px;
-}
-span.fancytree-title {
-  color: rgb(244, 246, 255) !important;
-}
-span.fancytree-active:not(.fancytree-focused) .fancytree-title {
-  background-color: #42424278 !important;
+  padding-left: 10px !important;
 }
 p {
   font-size: 17.3px !important;
   color: hsl(0, 1%, 2%) !important;
 }
 #title-container {
-  background-color: #25242d;
-  margin-right: 0.7rem;
-  margin-top: 0rem;
-  border-radius: 0.4rem;
-  padding-top: 3px;
-  padding-bottom: 4px;
-  border-top: 3px solid #9886b5bd!important
-}
-#note-title {
-  background-color: #9c94bb3b !important;
-  color: rgb(244, 246, 255) !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-  -webkit-border-radius: 0.4rem !important;
-  -moz-border-radius: 0.4rem !important;
+  background-color: #25242d !important;
+  margin-right: 0.7rem !important;
+  margin-top: 0 !important;
   border-radius: 0.4rem !important;
-  padding-left: 0.50rem !important;
+  padding-top: 3px !important;
+  padding-bottom: 4px !important;
+  border-top: 3px solid #9886b5bd!important
 }
 #note-detail-component-wrapper {
   background-color: #8786a03d !important;
   color: white !important;
 }
 .CodeMirror-lines {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.9rem;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.9rem !important;
   color: #1CC7F1 !important; /* Indiglo Blue */
 }
 .cm-s-default .cm-qualifier {
@@ -165,38 +163,35 @@ span.cm-comment {
   color: whitesmoke !important;
 }
 figure {
-  background-color: #4a4a4ad9;
+  background-color: #4a4a4ad9 !important;
 }
 figure:focus {
   outline-color: transparent !important;
-  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 41%, 0.56);
+  box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 41%, 0.56) !important;
 }
 div#note-detail-text p {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  text-indent: 0.9rem;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+  text-indent: 0.9rem !important;
 }
 .child-overview { /* Makes them pop on the dark background */
-  font-size: 1.1rem;
-  background: #c8d4c91f;
-  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  font-size: 1.1rem !important;
+  background: #c8d4c91f !important;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2) !important;
 }
 #children-overview { /* Fixes the child note previews being to far to the left */
-  padding-left: 1rem;
-}
-.fancytree-title{
-  font-weight:400!important;
+  padding-left: 1rem !important;
 }
 
 .ck-content code {
     background-color: rgb(76, 38, 114) !important; /* Dark grey */
-    padding: 0.4rem 0.1em;
-    border-radius: 0px;
-    margin-top: -0.3rem;
-    font-size: 95%;
-    line-height: 110%;
-    white-space: pre;
-    white-space: pre-wrap;
-    display: -webkit-box;
-    font-family: 'Fira Code', monospace;
+    padding: 0.4rem 0.1em !important;
+    border-radius: 0px !important;
+    margin-top: -0.3rem !important;
+    font-size: 95% !important;
+    line-height: 110% !important;
+    white-space: pre !important;
+    white-space: pre-wrap !important;
+    display: -webkit-box !important;
+    font-family: 'Fira Code', monospace !important;
 }
