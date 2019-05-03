@@ -135,7 +135,7 @@ p {
   color: #C8C1FF !important; /* Pale Violet */
 }
 span.cm-keyword {
-  color: #F2CECF !important; /* Extremely Pale / Light Pink */
+  color: #ffffff !important; /* White */
 }
 span.cm-builtin {
   color: #FF8DE6 !important; /* Pepto Bismal Pink */
@@ -144,10 +144,16 @@ span.cm-tag {
   color: #E3587D !important; /* Reddish Pink */
 }
 span.cm-variable-2 {
-  color: #FFDCFA !important; /* Pinkish White */
+  color: #ff7bf9 !important; /* Bright Pink */
 }
 span.cm-variable-3 {
   color: #49E040 !important; /* Bright Green */
+}
+span.cm-def {
+    color: #0bffcb !important; /* Bright Teal */
+}
+span.cm-comment {
+    color: #d1e829 !important; /* Bright Yellow */
 }
 #note-detail-text p {
   color: #fffdfdf0 !important;
