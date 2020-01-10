@@ -6,6 +6,10 @@ Currently I am up to date with the **v0.38.2 release**
 Current Themes Included:
 ------
 
+Simple Dark
+![Simple Dark Theme](https://i.imgur.com/zHsQ3cy.png)
+
+------
 Purple Rain
 ![Purple Rain Theme](https://i.imgur.com/DMT7xOp.png)
 -------
