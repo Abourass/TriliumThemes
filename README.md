@@ -24,7 +24,7 @@ The Code Editor is also themed
 
 ## Instalation 
 You can use the example CSS files to make root level css with the @appCss attribute. 
+   * [Simple Dark's CSS File](https://raw.githubusercontent.com/Abourass/TriliumThemes/master/examples/css/SimpleDark.css)
    * [Purple Rain's CSS File](https://github.com/Abourass/TriliumThemes/blob/master/examples/css/PurpleRain.css)
    * [Rainbow in the Dark's CSS File](https://github.com/Abourass/TriliumThemes/blob/master/examples/css/RainbowInTheDark.css)
-
 
