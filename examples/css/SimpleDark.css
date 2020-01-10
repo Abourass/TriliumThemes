@@ -9,6 +9,7 @@ body {
     --button-border-color: #8d9ca39c;
     --button-border-radius: 6px;
     --link-color: #5353a9;
+    --modal-background-color: #282525;
 }
 
 /* Make Code More Readable by changing font FiraCode and making the size a tad smaller*/
