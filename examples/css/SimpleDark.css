@@ -1,0 +1,33 @@
+body {
+    --main-text-color: #f8f9fa;
+    --main-background-color: #1b1d1e;
+    --main-border-color: #7a8ba654;
+    --accented-background-color: #232425;
+    --more-accented-background-color: #4c4e68;
+    --header-background-color: #393838;
+    --button-background-color: #878795;
+    --button-border-color: #8d9ca39c;
+    --button-border-radius: 6px;
+    --link-color: #5353a9;
+}
+
+/* Make Code More Readable by changing font FiraCode and making the size a tad smaller*/
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+.CodeMirror-lines {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.9rem !important;
+  color: #ced246eb;
+}
+
+/* You may want to change the headers padding-top back to 4px.
+The top bar is the same color as my gnome theme so I don't need it to be larger personally */
+#header {
+    padding-top: 0 !important; 
+}
+
+/* Just making the global button have the same spacing as the article title to the right */
+#global-buttons {
+    padding: 0 !important;
+    margin: 4px 15px 5px 5px !important;
+}
