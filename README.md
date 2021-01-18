@@ -1,6 +1,8 @@
 # Trilium Themes
 A few custom themes for the delightful [Trilium Notebook app](https://github.com/zadam/trilium).
 
+These themes make use of https://github.com/tonsky/FiraCode to enable font-ligatures within the code features. 
+
 Current Themes Included:
 ------
 
