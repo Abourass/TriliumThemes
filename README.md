@@ -4,10 +4,15 @@ A few custom themes for the delightful [Trilium Notebook app](https://github.com
 Current Themes Included:
 ------
 
-Simple Dark
-![Simple Dark Theme](https://i.imgur.com/zHsQ3cy.png)
+Cobalt
+![Cobalt Theme](https://i.imgur.com/6fFnMuB.png)
 
 ------
+
+Simple Dark
+![Simple Dark Theme](https://i.imgur.com/zHsQ3cy.png)
+------
+
 Purple Rain
 ![Purple Rain Theme](https://i.imgur.com/DMT7xOp.png)
 -------
