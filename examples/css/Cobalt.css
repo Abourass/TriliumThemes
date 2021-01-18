@@ -1,0 +1,63 @@
+body {
+  --main-text-color: #78d3ff; /* #f8f9fa */
+  --main-background-color: #1F292E; /* #1b1d1e */
+  --main-border-color: #7a8ba654;
+  --accented-background-color: #232425;
+  --more-accented-background-color: #4c4e68;
+  --header-background-color: #1F292E; /* #393838 */
+  --button-background-color: #878795;
+  --button-border-color: #8d9ca39c;
+  --button-border-radius: 6px;
+  --link-color: #ca93c4;
+  --modal-background-color: #282525;
+}
+
+/* Make Code More Readable by changing font FiraCode and making the size a tad smaller*/
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
+.CodeMirror-lines {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 0.9rem !important;
+  color: turquoise !important;
+}
+
+/* You may want to change the headers padding-top back to 4px.
+The top bar is the same color as my gnome theme so I don't need it to be larger personally */
+#header {
+  padding-top: 0 !important;
+}
+
+/* Just making the global button have the same spacing as the article title to the right */
+#global-buttons {
+  padding: 0 !important;
+  margin: 4px 15px 5px 5px !important;
+}
+
+/* Make the note title box rounded like the buttons and make sure the text is no longer flushed against the right side */
+.note-title {
+  border-radius: 5px;
+  padding-right: 5px !important;
+}
+
+p {
+  color: #CBD9EC;
+}
+
+/* Make the code editor readable */
+.cm-s-default .cm-builtin { color: #9368f7 !important; }
+.cm-s-default .cm-qualifier { color: #4d9c28 !important; }
+.cm-s-default .cm-atom { color: #d23a8c !important; }
+.cm-s-default .cm-def, .cm-s-default .cm-variable-2 { color: var(--main-text-color) !important}
+.cm-s-default .cm-string { color: #ad5858 !important}
+.cm-s-default .cm-keyword { color: #e17eef !important}
+
+/* Make the Code Examples in our Notes more readable */
+.ck-content pre {
+  background: #2726264d !important;
+}
+
+.btn:not(.btn-primary) {
+  border-color: transparent !important;
+  background-color: #6161777a !important;
+  color: #93d9f1e6 !important;
+}
